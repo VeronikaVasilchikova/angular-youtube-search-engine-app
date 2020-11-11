@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -92,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-youtube-search-engine-app"
+    }
+  },
+  "defaultProject": "angular-youtube-search-engine-app",
+  "cli": {
+    "analytics": "57c4a66c-76ca-4bf2-b5c5-1d6303da494d"
+  }
 }

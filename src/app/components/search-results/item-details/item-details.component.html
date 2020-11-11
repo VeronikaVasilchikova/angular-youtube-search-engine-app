@@ -1,0 +1,25 @@
+<button type="button" mat-button (click)="onBackToList()">
+  <img src="assets/img/back_button.png">
+</button>
+<mat-card class="result-item">
+  <img
+    mat-card-image
+    [src]="video.snippet.thumbnails.medium.url"
+    alt="Photo of a Shiba Inu"
+  >
+  <mat-card-header>
+    <mat-card-title>{{video.snippet.title}}</mat-card-title>
+    <mat-card-subtitle>{{video.snippet.publishedAt}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>{{video.snippet.description}}</mat-card-content>
+  <mat-card-content>
+    <mat-icon aria-hidden="false" aria-label="counts of view">remove_red_eye</mat-icon>
+    <mat-card-subtitle>{{video.statistics.viewCount}}</mat-card-subtitle>
+    <mat-icon aria-hidden="false" aria-label="Like">thumb_up</mat-icon>
+    <mat-card-subtitle>{{video.statistics.likeCount}}</mat-card-subtitle>
+    <mat-icon aria-hidden="false" aria-label="Dislike">thumb_down</mat-icon>
+    <mat-card-subtitle>{{video.statistics.dislikeCount}}</mat-card-subtitle>
+    <mat-icon aria-hidden="false" aria-label="">comment</mat-icon>
+    <mat-card-subtitle>{{video.statistics.commentCount}}</mat-card-subtitle>
+  </mat-card-content>
+</mat-card>

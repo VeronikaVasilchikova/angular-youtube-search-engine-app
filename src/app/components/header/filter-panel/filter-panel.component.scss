@@ -1,0 +1,36 @@
+.filter-panel {
+  width: 100%;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span, a {
+    display: block;
+    margin-right: 10px;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  span {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #929292;
+  }
+
+  a {
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+    color: #2F80ED;
+  }
+
+  a:hover {
+    text-decoration-line: underline;
+  }
+}

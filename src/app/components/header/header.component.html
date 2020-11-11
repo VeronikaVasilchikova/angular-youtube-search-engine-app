@@ -1,0 +1,7 @@
+<header>
+  <div class="upper-header">
+    <app-search-panel (showFilterPanel)="onShowFilter()"></app-search-panel>
+    <app-login-panel></app-login-panel>
+  </div>
+  <app-filter-panel *ngIf="isShownFilterPanel"></app-filter-panel>
+</header>

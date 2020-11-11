@@ -1,0 +1,18 @@
+<section>
+  <div class="results" *ngIf="videos.length !== 0; else fail">
+    <app-result-item
+        *ngFor="let video of videos; let i = index"
+        [video]="video"
+        [index]="i"
+        class="results-item"
+      ></app-result-item>
+  </div>
+  <ng-template #fail>
+    <div class="fail">
+      <p>There is nothing to show</p>
+      <img src="assets/img/fail.png">
+    </div>
+  </ng-template>
+</section>
+
+<router-outlet></router-outlet>

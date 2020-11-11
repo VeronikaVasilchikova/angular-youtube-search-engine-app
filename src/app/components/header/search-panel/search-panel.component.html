@@ -1,0 +1,16 @@
+<div class="search-panel">
+  <button type="button" mat-button routerLink="/search-results">
+    <img src="assets/img/logo.png" alt="logo">
+  </button>
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <input matInput type="text" placeholder="Type to search" formControlName="search">
+    </mat-form-field>
+    <button type="submit" mat-button>
+      Search
+    </button>
+    <button type="button" mat-button (click)="onShowFilterPanel()">
+      <img src="assets/img/search_settings.png" alt="search settings">
+    </button>
+  </form>
+</div>
